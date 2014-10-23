@@ -1,0 +1,234 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	font-family: Helvetica, sans-serif; font-weight: Lighter; font-size: 12px; color:#000000; margin: 5; padding:5; background-color:#FFFFFF;
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	margin: 0;
+	padding: 0;
+}
+	
+	#contenedor{
+	position:absolute;
+	margin-top:-279px;
+	margin-left:-478px;
+	left:50%;
+	top:50%;
+	width:956px;
+	height:558px;  
+/*	border: 1px solid red; */
+	
+}
+
+	#colder{
+	position: absolute;
+	top: 2px;
+	right:0px;
+	width: 785px;
+	height: 558px;
+	/* border:1px solid cyan; */
+}
+	
+	#colizq{
+	width: 146px;
+	height: 558px;
+/*	border:1px solid cyan; */
+	
+}
+
+	#logo {
+		width: 69px;
+		height: 69px;
+		display: block;
+	/*	border:1px solid green;*/
+		margin-top: 65px;
+		margin-bottom:70px;
+		background:url(../img/logo.png) no-repeat;
+	}
+	
+	#menu{
+	width: 100%;
+	display:block;
+	height: 350px;
+/*	border:1px solid green; */
+	line-height:25px;
+	
+	}
+	
+	#menu a {text-decoration:none; color:#000000; }
+	#menu a:hover {text-decoration:underline;}
+	#menu div a {color:#666666 }
+	#menu div a:hover {text-decoration:none; color:#333333; }
+
+	#textoinfo a {color:#666666; text-decoration:none; }
+	#textoinfo a:hover {text-decoration:underline;}
+	
+	#imagen{
+		position:absolute;
+		display: block;
+		width: 699px;
+		height: 502px;
+		margin-top:2px;
+		margin-bottom:2px;
+	/*	border:1px solid violet; */
+		background:url(../galeria/caratulas/car_003_bambi.jpg);
+	}
+	
+	
+	#paginador{
+		width: 38px;
+		height: 12px;
+/*		border:1px solid black; */
+		position: absolute;
+		text-align:right;
+		top: 212px;
+		right: 0px;
+		font-size:9px;
+	}
+	
+	#textoinfo, #textoprensa {
+		position:absolute;
+		float:left;
+		display:block;
+		width:471px;
+		height:345px;
+		margin-left:59px;
+		margin-top:47px;
+		padding-left:64px;
+		padding-right:44px;
+		padding-top:45px;
+		color:#333;
+		line-height:16px;
+		display:none;
+		background: url(../img/bg.png);
+	}
+	
+	
+	#descripcion, .orbit-caption{
+		position: absolute;
+		bottom:0px;
+		width: 699px;
+		height: 36px;
+		margin-top: 19px;
+		/* border:1px solid violet; */
+	}
+	
+	.trabajo{
+		width: 177px;
+		height: 36px;
+		/* border:1px solid green; */
+		font-family: Times;
+		letter-spacing:1px;
+		text-transform:uppercase;
+		font-weight: Bold;
+		font-size:10px;
+		color:#666666;
+	}
+	
+	#version3{
+		position: relative;
+		top: 502px;
+		width: 699px;
+		height: 36px;
+		text-align:right;
+		font-family: Times;
+		letter-spacing:1px;
+		text-transform:uppercase;
+		font-weight: Bold;
+		font-size:10px;
+		color:#666666;	
+		height: 16px;
+		display: block;
+		margin-top: 12px;
+	}
+	
+	/* de aca*/
+	
+	
+	#menuprint, #menupackaging, #menueditorial, #menudigital, #menuilustracion, #menuencuadernacion, #menureciclaje, #menuprensa, #menuinfo { 
+		display: none;
+	}
+	
+	
+	.submenu {
+		line-height:16px;
+		color:#666666;
+
+	}
+	
+	#print:target * #menuprint, 
+	#packaging:target * #menupackaging,  
+	#editorial:target * #menueditorial, 
+	#digital:target * #menudigital, 
+	#ilustracion:target * #menuilustracion, 
+	#encuadernacion:target * #menuencuadernacion, 
+	#reciclaje:target * #menureciclaje, 
+	#prensa:target * #menuprensa { 
+		display:block;
+	}
+	
+	#print:target * #descver, 
+	#packaging:target * #descver,  
+	#editorial:target * #descver, 
+	#digital:target * #descver, 
+	#ilustracion:target * #descver, 
+	#encuadernacion:target * #descver, 
+	#reciclaje:target * #descvere, 
+	#prensa:target * #descver{ 
+		display:block;
+	}
+
+	
+	#descver, #info:target * #descver{
+	display:none }
+
+	
+	#prensa:target * #textoprensa ,
+	#info:target * #textoinfo {
+		display:block;
+	} 
+	
+	#cuadricule{
+		position:relative;
+		background-image:url(../img/bg2.png);
+		float:left;
+		width:190px;
+		height:102px;
+		left:264px;
+		top:213px;
+	}
+	
+	#featured{
+	 	margin-top: 2px;
+		width:699 px;
+		height:502px;
+	}
+	
+	
+	#content{
+	
+	}
+	.orbit-caption {
+		position:relative;
+	}
+	#idioma {
+	margin-top:120px;
+	}
+	#idioma a {
+		text-decoration: underline;	
+	}
+	
+	
+	#menu a {
+		display: block;	
+	}
+	
+	.submenu * {
+		display: inline;	
+	}
+	

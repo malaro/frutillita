@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {font-family: Helvetica, sans-serif;
+	font-weight: Lighter;
+	font-size: 12px;
+	color:#000000}
+
+#contenedor{
+	position: absolute;
+	width: 970px;
+	min-height: 600px;
+	display: block;
+	border: 1px solid red;
+	left: 236px;
+	top: 44px;
+}
+	
+
+#columna_izq{
+	width: 166px;
+	height: 600px;
+	display: block;
+	border:1px solid blue;
+	clear: left;
+}
+#columna_der{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 794px;
+	height: 600px;
+	display: block;
+	border:1px solid yellow;
+}
+	
+#logo{
+	width: 65px;
+	height: 65px;
+	display: block;
+	border:1px solid green;
+	margin-left: 5px;
+	margin-top: 71px;
+	margin-bottom: 76px;
+}
+
+#menu{
+	width: 100%;
+	height: 222px;
+	display: block;
+	border:1px solid violet;}
+	
+#imagen{
+	width: 699px;
+	height: 502px;
+	display: block;
+	border:1px solid black;}
+	
+#paginador{
+	width: 30px;
+	height: 16px;
+	display: block;
+	border:1px solid black;
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	font-size:9px;
+	}
+
+	
+#texto_img{
+width: 577px;
+	height: 387px;
+	display: block;
+	border:1px solid black;
+	opacity:64%}
+	
+	
+#descripcion{
+width: 522px;
+	height: 16px;
+	display: block;
+	border:1px solid green;
+	margin-top: 12px;}
+	
+	
+#descripcion{
+	height: 16px;
+	display: block;
+	border:1px solid green;
+	margin-top: 12px;
+	}
+	
+	
+#trabajo{
+	width: 177px;
+	height: 16px;
+	border:1px solid green;
+	margin-top: 12px;
+	font-family: Times;
+	font-weight: Bold;
+	font-size:10px;
+	kerning: 50px
+	text-transform:Uppercase;
+	color:#666666;
+}
+	
+	
+
+	
+
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
