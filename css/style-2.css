@@ -161,7 +161,7 @@ div {
 
 	}
 	
-	#print:target * #menuprint, 
+	#joyas:target * #menuprint, 
 	#packaging:target * #menupackaging,  
 	#editorial:target * #menueditorial, 
 	#digital:target * #menudigital, 
@@ -172,7 +172,7 @@ div {
 		display:block;
 	}
 	
-	#print:target * #descver, 
+	#joyas:target * #descver, 
 	#packaging:target * #descver,  
 	#editorial:target * #descver, 
 	#digital:target * #descver, 

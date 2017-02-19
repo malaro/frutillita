@@ -1,13 +1,3 @@
-<?
-	if ($_GET["l"]) {
-		setcookie("idioma", $_GET["l"], time()+60*60*24*360);
-		exit('<meta http-equiv="refresh" content="0; url=./" />');
-	}
-	if (!$_COOKIE["bg"]) {
-		setcookie("bg", rand(1,5), time()+60);
-		exit('<meta http-equiv="refresh" content="0; url=./" />');
-	}
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -21,7 +11,7 @@
 
 <style>
 	#imagen {
-	 	background: url('galeria/caratulas/car_00<? echo $_COOKIE["bg"]; ?>.jpg');
+	 	background: url('galeria/caratulas/car_001.jpg');
 	}
 </style>
 
@@ -31,7 +21,7 @@
 </head>
 <body>
 <!-- esto es una nota clase 2 abro un div para cada submenu y al final lo cierro -->
-<div id="print">
+<div id="joyas">
 <div id="packaging">
 <div id="editorial">
 <div id="digital">
@@ -44,30 +34,20 @@
 			<div id="colder"> 
 			<div id="paginador"></div>
 			
-    		<div id="imagen"> 
-                     	 
-            	 <div id="textoprensa">
-              		<?php 
-                   		$idioma="";
-						if ($_COOKIE["idioma"] == "en") $idioma="_in-";
-						include $idioma."prensa.html";
-					?>
-               
-                 </div>
-                 <div id="textoinfo">
-                   	<?php
-						include $idioma."info.html";
-					?>
-    			</div>
-       	</div>
-       	
-	<?php 
-		if ($_COOKIE["idioma"] == "en") $idioma="_in-";
-		if ($_GET["a"]) {
-				// el remplace esta para dar más "seguridad"
-				include $idioma.str_replace("/", "", $_GET["a"]);
-	?>
 	
+        <div id="featured">
+            <img src="galeria/packaging/pac_002a_amaryllis.jpg" data-caption="#descver1" width="699" height="502" />
+            <img src="galeria/packaging/pac_002b_amaryllis.jpg" data-caption="#descver2" width="699" height="502" />
+            <img src="galeria/packaging/pac_002c_amaryllis.jpg" data-caption="#descver3" width="699" height="502" />
+            
+    
+           
+                  </div>
+            
+	
+		<span id="descver1" class="oculto"><span class="trabajo">_Amaryllis</span> Diseño de packaging hexagonal para bulbos de amarilis y narcisos, Totalgreen, Holanda </span> 
+        <span id="descver2" class="oculto"><span class="trabajo">_Amaryllis</span> Diseño de packaging hexagonal para bulbos de amarilis y narcisos, Totalgreen, Holanda </span>
+        <span id="descver3" class="oculto"><span class="trabajo">_Amaryllis</span> Diseño de packaging hexagonal para bulbos de amarilis y narcisos, Totalgreen, Holanda </span>        	
 	<style>
 		#imagen {
 		 	background: none;
@@ -76,43 +56,33 @@
 			display: none;	
 		}
 	</style>
-	
-	<?php } ?>
-	
-	<? if (!$_COOKIE["idioma"]) { ?>
-		<span id="version3">Versión 3</span>
-  	<? } ?>
+			      	
 
+	
   </div> 
  <div id="colizq">
 <div id="logo" onClick="location.href='./#';"></div>
-<?php if (!$_COOKIE["idioma"]) {  ?>
-	<div id="idioma">
-		<div id="menu">
-			<a href="?l=en">ENGLISH</a>
-			<a href="?l=es">ESPAÑOL</a>
-		</div>
-	</div>
-<? } else { ?>
-<div id="menu"><a href="?a=print_trasbordos.html#print">PRINT</a>
+<div id="menu"><a href="#joyas">JOYAS</a>
   <div class="submenu" id="menuprint">
-    <a href="?a=print_trasbordos.html#print" >Trasbordos</a>
-    <a href="?a=print_jenseits.html#print" >Jenseits</a>
-    <a href="?a=print_hannover.html#print" >Hannover</a>
-    <a href="?a=print_objetos.html#print" >Objetos</a>
-    <a href="?a=print_dotzero.html#print" >Dotzero</a>
-    <a href="?a=print_himmel.html#print" >Himmel</a>
-    <a href="?a=print_articultores.html#print" >Articultores</a>
-    <a href="?a=print_franziskus.html#print" >M+F galeria</a>
-    <a href="?a=print_jumbo.html#print" >Jumbo</a>
-    <a href="?a=print_noraluca.html#print" >Noraluca</a>
-    <a href="?a=print_amor.html#print" >Amor y Humor</a>
-    <a href="?a=print_demo.html#print" >Demos 1</a>
-   	<a href="?a=print_demo2.html#print" >Demos 2</a>
-    <a href="?a=print_capataza.html#print" >Capataza</a>
-    <a href="?a=print_qom.html#print" >Qom</a>
-    <a href="?a=print_sony.html#print" >Sony</a>
-    <a href="?a=print_identidad.html#print" >Logos</a>
+    <a href="?a=print_trasbordos.html#joyas" >Trasbordos</a>
+    <a href="?a=print_indurain.html#joyas" >Indurain</a>
+    <a href="?a=print_camino.html#joyas" >Camino indirecto</a>
+    <a href="?a=print_jenseits.html#joyas" >Jenseits</a>
+    <a href="?a=print_hannover.html#joyas" >Hannover</a>
+    <a href="?a=print_objetos.html#joyas" >Objetos</a>
+    <a href="?a=print_dotzero.html#joyas" >Dotzero</a>
+    <a href="?a=print_himmel.html#joyas" >Himmel</a>
+    <a href="?a=print_articultores.html#joyas" >Articultores</a>
+    <a href="?a=print_franziskus.html#joyas" >M+F galeria</a>
+    <a href="?a=print_jumbo.html#joyas" >Jumbo</a>
+    <a href="?a=print_noraluca.html#joyas" >Noraluca</a>
+    <a href="?a=print_amor.html#joyas" >Amor y Humor</a>
+    <a href="?a=print_demo.html#joyas" >Demos 1</a>
+   	<a href="?a=print_demo2.html#joyas" >Demos 2</a>
+    <a href="?a=print_capataza.html#joyas" >Capataza</a>
+    <a href="?a=print_qom.html#joyas" >Qom</a>
+    <a href="?a=print_sony.html#joyas" >Sony</a>
+    <a href="?a=print_identidad.html#joyas" >Logos</a>
     </div>
   <a href="?a=packaging_amaryllis.html#packaging">PACKAGING</a>
   <div class="submenu" id="menupackaging">
@@ -138,8 +108,7 @@
     <a href="?a=web_pachanga.html#digital" >Pachanga</a>
     <a href="?a=web_timba.html#digital" >Timba</a>
     </div>
-  <a href="?a=ilustracion_code.html#ilustracion">ILUSTRACIÓN
-  </a>
+  <a href="?a=ilustracion_code.html#ilustracion">ILUSTRACIÓN  </a>
   <div class="submenu" id="menuilustracion">
     <a href="?a=ilustracion_code.html#ilustracion" >Code</a>
     <a href="?a=ilustracion_ciempies.html#ilustracion" >Ciempies</a>
@@ -154,12 +123,15 @@
     <a href="?a=ilustracion_autumn.html#ilustracion" >Autumn</a>
     <a href="?a=ilustracion_oso.html#ilustracion" >Oso</a>
     </div>
-  <a href="?a=encuadernacion_casa.html#encuadernacion">ENCUADERNACION
+  <a href="?a=encuadernacion_dana.html#encuadernacion">ENCUADERNACIÓN
   </a>
   <div class="submenu" id="menuencuadernacion">
+     <a href="?a=encuadernacion_dana.html#encuadernacion" >Dana</a>
+  	<a href="?a=encuadernacion_dido.html#encuadernacion" >Felipa & Dido</a>
   	<a href="?a=encuadernacion_casa.html#encuadernacion" >Casa</a>
     <a href="?a=encuadernacion_shiatsu.html#encuadernacion" >Shiatsu</a>
     <a href="?a=encuadernacion_tao.html#encuadernacion" >Tao</a>
+  
    </div>
   <a href="?a=reciclaje_aluminio.html#reciclaje">RECICLAJE</a>
   <div class="submenu" id="menureciclaje">
@@ -184,8 +156,7 @@
     <a href="?a=prensa_fontana.html#prensa" >Fontana</a>
     </div>
   <a href="?#info">INFO</a>
-  <? } ?>
-  </div>
+    </div>
 		</div> </div> </div> </div> </div> </div> </div> </div> </div>
 	</div>
 </div>
@@ -208,3 +179,4 @@
 
 </body>
 </html>
+
